@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สื่อการเรียนรู้คำศัพท์ภาษาจีนใช้ในชีวิตประจำวัน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+    <style>
+          body {
+            background: linear-gradient(to top, #f1f129, #ffffff);
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: inline-block; /* ปรับให้ขนาดพื้นหลังปรับตามเนื้อหา */
+        }
+        .banner {
+            width: 100%; /* ความกว้างเต็มหน้าจอ */
+            max-height: 320px; /* ความสูงสูงสุด 320px */
+            overflow: hidden; /* ซ่อนส่วนที่เกิน */
+        }
+
+        .banner img {
+            width: 100%; /* ให้ภาพขยายตามความกว้างของหน้าจอ */
+            height: auto; /* รักษาสัดส่วนของภาพ */
+            object-fit: cover; /* ครอบภาพให้พอดีกับ container */
+            object-position: center; /* จัดตำแหน่งตรงกลาง */
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #0b2ee0;
+            padding: 15px;
+            justify-content: center;
+        }
+
+        .navbar a, .navbar button {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 800;
+            font-family: 'Mali', cursive;
+        }
+
+        .navbar a:hover {
+            background-color: #fd1d1d;
+        }
+
+        .navbar button {
+            background-color: #0b72e0; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s;
+        }
+
+        .navbar button:hover {
+            background-color: #fd1d1d; 
+        }
+
+        @media (max-width: 768px){
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            }
+
+        h1 {
+            color: blue;
+            font-size: 35px;
+            font-weight: 700;
+            font-family: 'Mali', cursive;
+        }
+        h3{
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            font-weight: 700;
+            font-family: 'Mali', cursive;
+        }
+        h4{
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            font-weight: 700;
+            font-family: 'Mali', cursive;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* จัดให้อยู่คนละแถว */
+            gap: 30px; /* ระยะห่างระหว่างแถว */
+            margin: 25px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 50px; /* ระยะห่างระหว่างรูปภาพ */
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #3445db; /* สีหัวข้อ */
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* ระยะห่างระหว่างโปรไฟล์ */
+            margin: 20px;
+        }
+
+        .profile {
+            width: 200px; /* กำหนดขนาดคงที่ */
+            text-align: center;
+        }
+
+        .profile img {
+            width: 105%;
+            height: 200px; /* ทำให้ทุกภาพสูงเท่ากัน */
+            object-fit: cover; /* ตัดส่วนเกินของภาพ */
+            border-radius: 15px; /* มุมมน */
+            border: 3px solid #3445db; /* เพิ่มเส้นขอบ */
+        }
+
+        .profile h5 {
+            font-size: 13px;
+            margin: 10px 0 5px;
+            color: #000000; /* สีชื่อ */
+            font-style: bold;
+            
+        }
+
+        .profile p {
+            font-size: 1em;
+            margin: 0;
+            color: #dc0f0f; /* สีคำอธิบาย */
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <img src="pic1.gif" alt="แบนเนอร์เว็บไซต์" class="banner">
+    <div class="navbar">
+        <a href="index.html">หน้าหลัก</a>   
+        <a href="pretest.html">แบบทดสอบก่อนเรียน</a>
+        <a href="cate.html">หมวดหมู่คำศัพท์</a>
+        <a href="quiz.html">บททดสอบหลังเรียน</a>
+        <a href="about.html">ผู้จัดทำ</a>
+        <a href="point.html">คะแนนของคุณ</a>
+        
+        <!-- ปุ่มลงชื่อเข้าใช้และสมัคร -->
+        <button onclick="location.href='login.html'">ลงชื่อเข้าใช้</button>
+        <button onclick="location.href='signup.html'">สมัครเข้าใช้เว็บไซต์</button>
+    </div>
+<center><h1>ผู้จัดทำ</h1></center>
+<div class="container">
+    <!-- กล่องโปรไฟล์ที่ 1 -->
+    <div class="row">
+    <div class="profile">
+        <img src="images/มัด.jpeg" alt="Profile 1">
+        <h5>นางสาวมัดดา วงษาชาลี</h5>
+        <p>โปรแกรมเมอร์ รวบรวมข้อมูล</p>
+    </div>
+    <!-- กล่องโปรไฟล์ที่ 2 -->
+    <div class="profile">
+        <img src="images/มิว.jpg" alt="Profile 2">
+        <h5> นางสาวสุพิชฌาย์ ชมบุญธนาพงศ์ </h5>
+        <p>ออกแบบกราฟิก รวบรวมข้อมูล</p>
+    </div>
+    </div>
+    <center><h1>ครูที่ปรึกษา</h1></center>
+    <div class="row">
+        <div class="profile">
+            <img src="images/ครูนิ.jpg" alt="Profile 3">
+            <h5>นางสาวนิลวรรณ นารัตน์ตุง</h5>
+            <p>ครูที่ปรึกษาโครงงาน</p>
+        </div>
+        <div class="profile">
+            <img src="images/ครูกาล.jpg" alt="Profile 4">
+            <h5>นาวกาญจนา ทิมภราดร</h5>
+            <p>ครูที่ปรึกษาโครงงาน</p>
+        </div>
+        <div class="profile">
+            <img src="images/ครูหญิงหญิง.jpg" alt="Profile 5">
+            <h5> Laoshi ZhuYingying</h5>
+            <p>ครูที่ปรึกษาโครงงาน</p>
+        </div>
+    </div>
+</div>
+<center><h3>สาขาวิชาเทคโนโลยีสารสนเทศ</h>3</center>
+<center><h3>วิทยาลัยเทคนิคปากช่อง</h3></center>
+<center><h4>อาชีวศึกษาในจังหวัดนครราชสีมา <br>สังกัดสำนักงานคณะกรรมการการอาชีวศึกษา กระทรวงศึกษาธิการ
+   <br> ตั้งอยู่เลขที่ 881 หมู่ 13 ตำบลจันทึก อำเภอปากช่อง จังหวัดนครราชสีมา 30130
+    </h4></center>
+
+</body>
+</html>

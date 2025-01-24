@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สื่อการเรียนรู้คำศัพท์ภาษาจีนใช้ในชีวิตประจำวัน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to top, #f1f129, #ffffff);
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: inline-block; /* ปรับให้ขนาดพื้นหลังปรับตามเนื้อหา */
+        }
+
+        .banner {
+            width: 100%; /* ความกว้างเต็มหน้าจอ */
+            max-height: 320px; /* ความสูงสูงสุด 320px */
+            overflow: hidden; /* ซ่อนส่วนที่เกิน */
+        }
+
+        .banner img {
+            width: 100%; /* ให้ภาพขยายตามความกว้างของหน้าจอ */
+            height: auto; /* รักษาสัดส่วนของภาพ */
+            object-fit: cover; /* ครอบภาพให้พอดีกับ container */
+            object-position: center; /* จัดตำแหน่งตรงกลาง */
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #0b2ee0;
+            padding: 15px;
+            justify-content: center;
+        }
+
+        .navbar a, .navbar button {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 800;
+            font-family: 'Mali', cursive;
+        }
+
+        .navbar a:hover {
+            background-color: #fd1d1d;
+        }
+
+        .navbar button {
+            background-color: #0b72e0; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s;
+        }
+
+        .navbar button:hover {
+            background-color: #fd1d1d; 
+        }
+
+        @media (max-width: 768px){
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            }
+
+        h1 {
+            color: blue;
+            font-size: 35px;
+            font-weight: 700;
+            font-family: 'Mali', cursive;
+        }
+
+        h3 {
+            color: rgb(244, 12, 12);
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Mali', cursive;
+        }
+        h2{
+            color: rgb(8, 8, 8);
+            font-family: 'Mali', cursive;
+        }
+    </style>
+</head>
+<body>
+    <img src="pic1.gif" alt="แบนเนอร์เว็บไซต์" class="banner">
+    <div class="navbar">
+        <a href="index.html">หน้าหลัก</a>   
+        <a href="pretest.html">แบบทดสอบก่อนเรียน</a>
+        <a href="cate.html">หมวดหมู่คำศัพท์</a>
+        <a href="quiz.html">บททดสอบหลังเรียน</a>
+        <a href="about.html">ผู้จัดทำ</a>
+        <a href="point.html">คะแนนของคุณ</a>
+        
+        <!-- ปุ่มลงชื่อเข้าใช้และสมัคร -->
+        <button onclick="location.href='login.html'">ลงชื่อเข้าใช้</button>
+        <button onclick="location.href='signup.html'">สมัครเข้าใช้เว็บไซต์</button>
+    </div>
+
+    <center><h1>ยินดีต้อนรับสู่</h1></center>
+    <center><h2>เว็บไซต์สื่อการเรียนรู้คำศัพท์ภาษาจีนใช้ในชีวิตประจำวัน</h2></center>
+    <center><h1>ความเป็นมาและความสำคัญ</h1></center>
+    <center><h3>ภาษาจีนมีบทบาทสำคัญในฐานะกุญแจสู่โอกาสด้านธุรกิจและการศึกษา อันเนื่องมาจาก บทบาทของประเทศจีนในฐานะศูนย์กลางเศรษฐกิจและเทคโนโลยี
+         แม้การเรียนภาษาจีนจะมีความท้าทายแต่การใช้เทคโนโลยีสมัยใหม่สามารถลดอุปสรรคและเพิ่มประสิทธิภาพการเรียนรู้ 
+         การพัฒนาเว็บไซต์สื่อการเรียนรู้ที่รวบรวมคำศัพท์และแบบทดสอบจึงเป็นแนวทางที่ตอบสนองต่อการพัฒนาการศึกษาในยุคดิจิทัลได้อย่างมีประสิทธิภาพ</h3>
+</center>
+         <center><h1> วัตถุประสงค์ </h1></center>
+         <center><h3>5.1 เพื่อพัฒนาเว็บไซต์สื่อการเรียนรู้คำศัพท์ภาษาจีนในชีวิตประจำวัน
+          <br>  5.2 เพื่อหาประสิทธิภาพของเว็บไซต์สื่อการเรียนรู้คำศัพท์ภาษาจีนในชีวิตประจำวัน</h3></center>
+</body>
+</html>

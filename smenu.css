@@ -1,0 +1,252 @@
+/* เบื้องต้นสำหรับการตั้งค่าหน้า */
+body {
+    font-family: 'Mali', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to left , #F6EBE6, #AEE1F9); 
+}
+
+header {
+    background: linear-gradient(to left, #f18629, #ffffff); /* ฟ้าสำหรับ header */  
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    object-fit: cover;
+}
+
+h1 {
+    color: rgb(0, 17, 200);
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Mali', cursive; /* เปลี่ยนฟอนต์เป็นแนวน่ารัก */
+    text-align: center;
+}
+
+h2{
+    color: #bb0b0b;
+    text-align: center;
+    font-size: 28px;
+}
+h3{
+    color: #000;
+    text-align: center;
+    line-height: 30px; /* ระยะห่างระหว่างบรรทัดคือ 24px */
+}
+h6{
+    color: rgb(247, 96, 2);
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.center-image {
+    display: block; /* ทำให้รูปกลายเป็น block element */
+    margin: 50px auto 0; 
+}
+.center-video {
+    display: block; /* ทำให้วิดีโอเป็น block element */
+    margin: 50px auto 0; /* กำหนดให้มีระยะด้านบน 50px และตรงกลาง */
+}
+/* ปุ่ม Hamburger */
+.hamburger {
+    position: fixed; /* ปรับเป็น fixed เพื่อให้อยู่ที่มุมซ้ายบน */
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* เรียงในแนวตั้ง */
+    justify-content: space-between; /* ระยะห่างระหว่างบาร์ */
+    width: 30px;
+    height: 21px;
+    z-index: 2000; /* ให้แฮมเบอร์เกอร์บาร์แสดงอยู่บนสุด */
+    
+}
+
+.hamburger span {
+    display: block;
+    width: 100%; /* ทำให้แต่ละบาร์กว้างเต็ม */
+    height: 5px; /* ความสูงของแต่ละบาร์ */
+    background-color: rgb(230, 14, 14); /* สีของบาร์ */
+    border-radius: 5px; /* ทำให้ขอบบาร์โค้งมน */
+    transition: all 0.3s; /* การเปลี่ยนแปลงที่ราบรื่นเมื่อเกิดการคลิก */
+}
+/* ซ่อนปุ่ม Hamburger */
+.hamburger.hidden {
+    opacity: 0; /* ทำให้ปุ่มโปร่งใส */
+    visibility: hidden; /* ซ่อนปุ่ม */
+}
+/* เมนู */
+.lesson-bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* ความกว้างของเมนู */
+    height: auto;
+    background-color: #d8f43d;
+    color: black;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* แสดงเมนูอยู่เหนือสุด */
+    transform: translateX(-100%); /* ซ่อนเมนู */
+    transition: transform 0.3s ease;
+    
+}
+
+.lesson-bar.show {
+    display: block;
+    transform: translateX(0); /* แสดงเมนูเมื่อคลิก */
+}
+
+.lesson-bar button {
+    background-color: #e71e03; 
+    color: rgb(242, 236, 236);
+    font-family: 'Mali', cursive;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* ปรับขนาดให้เต็มความกว้าง */
+    text-align: left;
+    margin-bottom: 10px; /* ระยะห่างระหว่างปุ่ม */
+    transition: background-color 0.3s; /* เพิ่มความนุ่มนวลในการเปลี่ยนสี */
+}
+
+.lesson-bar button:hover {
+    background-color: #555;
+
+}
+
+.lesson-button {
+    display: flex;
+    flex-wrap: wrap; /* อนุญาตให้จัดเรียงหลายแถว */
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    gap: 50px; /* ระยะห่างระหว่างปุ่ม */
+    margin-top: 50px; /* ระยะห่างจากแบนเนอร์ */
+}
+
+.lesson-link {
+    display: flex;
+    justify-content: center; /* จัดข้อความให้อยู่กลางในปุ่ม */
+    align-items: center; /* จัดข้อความให้อยู่กลางในปุ่ม */
+    width: 250px; /* ความกว้างของปุ่ม */
+    height: 100px; /* ความสูงของปุ่ม */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    border-radius: 10px; /* ความโค้งมนของปุ่ม */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวอักษรหนา */
+    color: white;
+    background-color: #5308e9; /* สีพื้นฐาน */
+    transition: background-color 0.3s ease;
+}
+
+/* กำหนดสีของปุ่มแต่ละปุ่ม */
+.lesson-link:nth-child(1) { background-color: #ff5733; } /* สีแดง */
+.lesson-link:nth-child(2) { background-color: #33c1ff; } /* สีฟ้า */
+.lesson-link:nth-child(3) { background-color: #33ff57; } /* สีเขียว */
+.lesson-link:nth-child(4) { background-color: #ff33a6; } /* สีชมพู */
+.lesson-link:nth-child(5) { background-color: #a633ff; } /* สีม่วง */
+.lesson-link:nth-child(6) { background-color: #ffd633; } /* สีเหลือง */
+.lesson-link:nth-child(7) { background-color: #33ffa6; } /* สีเขียวอ่อน */
+.lesson-link:nth-child(8) { background-color: #ff8633; } /* สีส้ม */
+.lesson-link:nth-child(9) { background-color: #2200e6;; } /* สีฟ้าเข้ม */
+.lesson-link:nth-child(10) { background-color: #85ff33; } /* สีเขียวสด */
+
+/* เอฟเฟกต์เมื่อเลื่อนเมาส์ผ่าน */
+.lesson-link:hover {
+    background-color: #000; /* เปลี่ยนเป็นสีดำ */
+    color: #fff; /* สีตัวอักษรเปลี่ยนเป็นสีขาว */
+}
+
+
+.lesson-link-1 { background-color: #ff5733; } /* สีแดง */
+.lesson-link-2 { background-color: #33c1ff; } /* สีฟ้า */
+.lesson-link-3 { background-color: #33ff57; } /* สีเขียว */
+.lesson-link-4 { background-color: #ff33a6; } /* สีชมพู */
+.lesson-link-5 { background-color: #a633ff; } /* สีม่วง */
+.lesson-link-6 { background-color: #ffd633; } /* สีเหลือง */
+.lesson-link-7 { background-color: #33ffa6; } /* สีเขียวอ่อน */
+.lesson-link-8 { background-color: #ff8633; } /* สีส้ม */
+.lesson-link-9 { background-color: #2200e6; } /* สีฟ้าเข้ม */
+.lesson-link-10 { background-color: #85ff33; } /* สีเขียวสด */
+/* เพิ่มความสวยงามทั่วไปของปุ่ม */
+.menu {
+    display: flex;
+    flex-wrap: wrap;        /* จัดให้มีหลายแถว */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    gap: 45px;              /* ระยะห่างระหว่างปุ่ม */
+    margin-top: 45px ;      /* จัดให้อยู่ตรงกลางของหน้า */
+  }
+  
+  .menu button {
+    flex: 1 0 calc(25% - 20px); /* ปุ่มในแต่ละแถวมี 4 ปุ่ม */
+    max-width: calc(25% - 70px); /* ขนาดปุ่มสูงสุด */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 40px 4px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Mali', cursive;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+.menu button:hover {
+    transform: scale(1.1); /* ขยายปุ่มเมื่อวางเมาส์ */
+    opacity: 0.9;
+}
+
+/* เพิ่มการปรับขนาดหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .menu {
+        gap: 20px;             /* ลดระยะห่างระหว่างปุ่ม */
+        margin-top: 20px;      /* ลดระยะห่างจากขอบ */
+        flex-direction: column; /* จัดปุ่มในแนวตั้ง */
+        align-items: center;   /* จัดให้อยู่ตรงกลาง */
+    }
+
+    .menu button {
+        flex: none;          /* ปิดการจัดสัดส่วน Flex */
+        width: 90%;          /* ขนาดปุ่มกว้าง 90% ของหน้าจอ */
+        max-width: 300px;    /* จำกัดความกว้างสูงสุด */
+        font-size: 16px;     /* ลดขนาดตัวอักษร */
+        padding: 20px 10px;  /* ลด Padding ของปุ่ม */
+    }
+
+    .lesson-bar {
+        width: 200px; /* ลดความกว้างของเมนูในมือถือ */
+    }
+
+    .hamburger {
+        top: 15px;
+        left: 15px;
+    }
+
+    .lesson-button {
+        width: 90%; /* กำหนดความกว้างปุ่ม */
+        margin: auto; /* ให้อยู่กลางหน้าจอ */
+        display: flex; /* ใช้ Flexbox */
+        flex-direction: column; /* จัดในแนวตั้ง */
+        align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* อัตราส่วน 16:9 (9/16 = 0.5625) */
+        overflow: hidden;
+    }
+    
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ทำให้วิดีโอครอบคลุมพื้นที่ */
+    }
+}
+

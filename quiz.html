@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สื่อการเรียนรู้คำศัพท์ภาษาจีนใช้ในชีวิตประจำวัน</title>
+    <link rel="stylesheet" href="smenu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>ทำแบบทดสอบหลังเรียนได้เลย</h1>
+    <!-- ปุ่ม Hamburger Menu -->
+    <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+ 
+<!-- เมนูเลือกย้อนกลับ -->
+<div class="lesson-bar" id="lesson-bar">
+    <a href="index.html"><button class="nav-button" data-lesson="1">หน้าหลัก</button></a>  
+    <a href="pretest.html"><button class="nav-button" data-lesson="3">แบบทดสอบก่อนเรียน</button></a>
+    <a href="cate.html"><button class="nav-button" data-lesson="4">หมวดหมู่คำศัพท์</button></a>
+    <a href="quiz.html"><button class="nav-button" data-lesson="5">แบบทดสอบหลังเรียน</button></a>
+    <a href="about.html"><button class="nav-button" data-lesson="6">ผู้จัดทำ</button></a>
+    <a href="point.html"><button class="nav-button" data-lesson="2">คะแนนของคุณ</button></a>
+    <a href="login.html"><button class="nav-button" data-lesson="7">ลงชื่อเข้าใช้</button></a>
+    <a href="signup.html"><button class="nav-button" data-lesson="7">สมัครเข้าใช้เว็บไซต์</button></a>
+</div>
+
+
+<div class="menu">
+    <button class="lesson-link-1" onclick="loadQuiz(1)">บททดสอบที่ 1</button>
+    <button class="lesson-link-2" onclick="loadQuiz(2)">บททดสอบที่ 2</button>
+    <button class="lesson-link-3" onclick="loadQuiz(3)">บททดสอบที่ 3</button>
+    <button class="lesson-link-4" onclick="loadQuiz(4)">บททดสอบที่ 4</button>
+    <button class="lesson-link-5" onclick="loadQuiz(5)">บททดสอบที่ 5</button>
+    <button class="lesson-link-6" onclick="loadQuiz(6)">บททดสอบที่ 6</button>
+    <button class="lesson-link-7" onclick="loadQuiz(7)">บททดสอบที่ 7</button>
+    <button class="lesson-link-8" onclick="loadQuiz(8)">บททดสอบที่ 8</button>
+    <button class="lesson-link-9" onclick="loadQuiz(9)">บททดสอบที่ 9</button>
+    <button class="lesson-link-10" onclick="loadQuiz(10)">บททดสอบที่ 10</button>
+</div>
+
+<div id="quiz-container">
+    <div id="quiz-1" class="quiz">
+        <h2>บททดสอบที่ 1</h2>
+        <form id="quiz-1-form">
+           <!-- คำถามที่ 1 -->
+<div>
+    <label>คำถามที่ 1: คำว่า “早上好” (Zǎoshang hǎo) ใช้ในช่วงเวลาใด?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q1" value="1" id="q1-a">
+            <label for="q1-a">ตอนเย็น</label>
+        </div>
+        <div>
+            <input type="radio" name="q1" value="2" id="q1-b">
+            <label for="q1-b">ตอนกลางวัน</label>
+        </div>
+        <div>
+            <input type="radio" name="q1" value="3" id="q1-c">
+            <label for="q1-c">ตอนเช้า</label>
+        </div>
+        <div>
+            <input type="radio" name="q1" value="4" id="q1-d">
+            <label for="q1-d">ตอนกลางคืน</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 2 -->
+<div>
+    <label>คำถามที่ 2: คำว่า “对不起” (Duìbùqǐ) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q2" value="1" id="q2-a">
+            <label for="q2-a">ขอบคุณ</label>
+        </div>
+        <div>
+            <input type="radio" name="q2" value="2" id="q2-b">
+            <label for="q2-b">ขอโทษ</label>
+        </div>
+        <div>
+            <input type="radio" name="q2" value="3" id="q2-c">
+            <label for="q2-c">สวัสดี</label>
+        </div>
+        <div>
+            <input type="radio" name="q2" value="4" id="q2-d">
+            <label for="q2-d">ลาก่อน</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 3 -->
+<div>
+    <label>คำถามที่ 3: คำว่า “你好” (Nǐ hǎo) แปลว่าอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q3" value="1" id="q3-a">
+            <label for="q3-a">ลาก่อน</label>
+        </div>
+        <div>
+            <input type="radio" name="q3" value="2" id="q3-b">
+            <label for="q3-b">สวัสดี</label>
+        </div>
+        <div>
+            <input type="radio" name="q3" value="3" id="q3-c">
+            <label for="q3-c">ขอโทษ</label>
+        </div>
+        <div>
+            <input type="radio" name="q3" value="4" id="q3-d">
+            <label for="q3-d">ขอบคุณ</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 4 -->
+<div>
+    <label>คำถามที่ 4: คำว่า “晚上好” (Wǎnshàng hǎo) ใช้ในเวลาใด?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q4" value="1" id="q4-a">
+            <label for="q4-a">เช้า</label>
+        </div>
+        <div>
+            <input type="radio" name="q4" value="2" id="q4-b">
+            <label for="q4-b">กลางวัน</label>
+        </div>
+        <div>
+            <input type="radio" name="q4" value="3" id="q4-c">
+            <label for="q4-c">เย็น</label>
+        </div>
+        <div>
+            <input type="radio" name="q4" value="4" id="q4-d">
+            <label for="q4-d">กลางคืน</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 5 -->
+<div>
+    <label>คำถามที่ 5: คำว่า  “请” (Qǐng) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q5" value="1" id="q5-a">
+            <label for="q5-a">กรุณา</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="2" id="q5-b">
+            <label for="q5-b">ขอโทษ</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="3" id="q5-c">
+            <label for="q5-c">ลาก่อน</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="4" id="q5-d">
+            <label for="q5-d">สวัสดี</label>
+        </div>
+    </div>
+</div>
+
+ <!-- คำถามที่ 6 -->
+<div>
+    <label>คำถามที่ 6: คำว่า “祝你一天愉快” (Zhù nǐ yītiān yúkuài) ใช้ในโอกาสใด?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q6" value="1" id="q6-a">
+            <label for="q6-a">请吃饭 (Qǐng chīfàn) - เชิญทานอาหาร</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="2" id="q6-b">
+            <label for="q6-b">祝愿 (Zhùyuàn) - อวยพรให้มีวันที่ดี</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="3" id="q6-c">
+            <label for="q6-c">道歉 (Dàoqiàn) - กล่าวขอโทษ</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="4" id="q6-d">
+            <label for="q6-d">告别 (Gàobié) - บอกลา</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 7 -->
+<div>
+    <label>คำถามที่ 7: คำว่า “没问题” (Méi wèntí) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q7" value="1" id="q7-a">
+            <label for="q7-a">ไม่มีปัญหา</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="2" id="q7-b">
+            <label for="q7-b">มีปัญหา</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="3" id="q7-c">
+            <label for="q7-c">ขอบคุณ</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="4" id="q7-d">
+            <label for="q7-d">ขอโทษ</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 8 -->
+<div>
+    <label>คำถามที่ 8: คำว่า “认识你很高兴” (Rènshí nǐ hěn gāoxìng) ใช้ในโอกาสใด?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q8" value="1" id="q8-a">
+            <label for="q8-a">第一次见面 (Dì yī cì jiànmiàn) - พบเจอกันครั้งแรก</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="2" id="q8-b">
+            <label for="q8-b">分开旅行 (Fēnkāi lǚxíng) - กล่าวลาขณะเดินทาง</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="3" id="q8-c">
+            <label for="q8-c">道歉 (Dàoqiàn) - กล่าวขอโทษ</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="4" id="q8-d">
+            <label for="q8-d">表示感谢 (Biǎoshì gǎnxiè) - กล่าวขอบคุณ</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 9 -->
+<div>
+    <label>คำถามที่ 9: คำว่า “不客气” (Bù kèqì) ใช้ตอบเมื่อมีคนพูดว่าอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q9" value="1" id="q9-a">
+            <label for="q9-a">再见 (Zàijiàn) - ลาก่อน</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="2" id="q9-b">
+            <label for="q9-b">你好 (Nǐ hǎo) - สวัสดี</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="3" id="q9-c">
+            <label for="q9-c">谢谢 (Xièxiè) - ขอบคุณ</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="4" id="q9-d">
+            <label for="q9-d">对不起 (Duìbùqǐ) - ขอโทษ</label>
+        </div>
+    </div>
+</div>
+
+<!-- คำถามที่ 10 -->
+<div>
+    <label>คำถามที่ 10: คำว่า “你叫什么名字？” (Nǐ jiào shénme míngzì?) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q10" value="1" id="q10-a">
+            <label for="q10-a">คุณชื่ออะไร?</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="2" id="q10-b">
+            <label for="q10-b">คุณสบายดีไหม?</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="3" id="q10-c">
+            <label for="q10-c">คุณอยู่ที่ไหน?</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="4" id="q10-d">
+            <label for="q10-d">คุณมาจากไหน?</label>
+        </div>
+    </div>
+</div>
+
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(1)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+    
+    <div id="quiz-2" class="quiz">
+        <h2>บททดสอบที่ 2</h2>
+        <form id="quiz-2-form">
+            <div>
+                <label>คำถามที่ 1: (Shùzì “5” de zhōngwén shì?) ตัวเลข "5" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q1" value="1" id="q1-a">
+                        <label for="q1-a"> 一 (yī)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="2" id="q1-b">
+                        <label for="q1-b">五 (wǔ)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="3" id="q1-c">
+                        <label for="q1-c">八 (bā)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="4" id="q1-d">
+                        <label for="q1-d"> 十 (shí) </label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 2 -->
+            <div>
+                <label>คำถามที่ 2: เลข "เจ็ด" คือพินอินข้ออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q2" value="1" id="q2-a">
+                        <label for="q2-a">yī</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="2" id="q2-b">
+                        <label for="q2-b">sì</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="3" id="q2-c">
+                        <label for="q2-c"> liù</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="4" id="q2-d">
+                        <label for="q2-d">qī</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 3 -->
+            <div>
+                <label>คำถามที่ 3: “六加四等于？” (“Liù jiā sì děngyú?”) หกบวกสี่เท่ากับเท่าไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q3" value="1" id="q3-a">
+                        <label for="q3-a">八 (bā)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="2" id="q3-b">
+                        <label for="q3-b">十 (shí)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="3" id="q3-c">
+                        <label for="q3-c">九 (jiǔ)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="4" id="q3-d">
+                        <label for="q3-d">十二 (shí èr)</label>
+                    </div>
+                </div>
+            </div>
+     <!-- คำถามที่ 4 -->
+     <div>
+        <label>คำถามที่ 4: 中文“1000”的读法是？(Zhōngwén “1000” de dúfǎ shì?) ตัวเลข "1000" ในภาษาจีนอ่านว่าอะไร?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q4" value="1" id="q4-a">
+                <label for="q4-a">一千 (yīqiān)</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="2" id="q4-b">
+                <label for="q4-b">一百 (yībǎi)</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="3" id="q4-c">
+                <label for="q4-c">一万 (yīwàn)</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="4" id="q4-d">
+                <label for="q4-d">一亿 (yīyì)</label>
+            </div>
+        </div>
+    </div>
+ <!-- คำถามที่ 5 -->
+ <div>
+    <label>คำถามที่ 5:(Yǐxià nǎgè shì “0”?) ข้อใดคือ "ศูนย์"?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q5" value="1" id="q5-a">
+            <label for="q5-a">零 (líng)</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="2" id="q5-b">
+            <label for="q5-b"> 一 (yī)</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="3" id="q5-c">
+            <label for="q5-c">十 (shí)</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="4" id="q5-d">
+            <label for="q5-d"> 百 (bǎi)</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 6 -->
+ <div>
+    <label>คำถามที่ 6: คำว่า “一半”的意思是？(“Yībàn” de yìsi shì?) "一半" หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q6" value="1" id="q6-a">
+            <label for="q6-a">ร้อย</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="2" id="q6-b">
+            <label for="q6-b"> หนึ่งในสาม</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="3" id="q6-c">
+            <label for="q6-c">ครึ่งหนึ่ง</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="4" id="q6-d">
+            <label for="q6-d">ศูนย์</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 7 -->
+ <div>
+    <label>คำถามที่ 7:数字“9”的中文拼音是？(Shùzì “9” de zhōngwén pīnyīn shì?) ตัวเลข "9" ในภาษาจีนมีพินอินว่าอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q7" value="1" id="q7-a">
+            <label for="q7-a">jiǔ</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="2" id="q7-b">
+            <label for="q7-b">qī</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="3" id="q7-c">
+            <label for="q7-c">sì</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="4" id="q7-d">
+            <label for="q7-d"> bā</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 8 -->
+ <div>
+    <label>คำถามที่ 8:“十二减六等于？” (“Shí’èr jiǎn liù děngyú?”) ข้อใด</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q8" value="1" id="q8-a">
+            <label for="q8-a">七 (qī)</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="2" id="q8-b">
+            <label for="q8-b">六 (liù)</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="3" id="q8-c">
+            <label for="q8-c">八 (bā)</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="4" id="q8-d">
+            <label for="q8-d"> 五 (wǔ)</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 9 -->
+ <div>
+    <label>คำถามที่ 9:“万”的英文是？(“Wàn” de yīngwén shì?) คำว่า "万" แปลว่าอะไรในภาษาอังกฤษ? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q9" value="1" id="q9-a">
+            <label for="q9-a"> Hundred</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="2" id="q9-b">
+            <label for="q9-b"> Million</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="3" id="q9-c">
+            <label for="q9-c">Thousand</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="4" id="q9-d">
+            <label for="q9-d"> Ten Thousand </label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 10 -->
+ <div>
+    <label>คำถามที่ 10: “加”的中文意思是？(“Jiā” de zhōngwén yìsi shì?) คำว่า "加" หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q10" value="1" id="q10-a">
+            <label for="q10-a"> บวก</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="2" id="q10-b">
+            <label for="q10-b">ลบ</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="3" id="q10-c">
+            <label for="q10-c">เท่ากับ</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="4" id="q10-d">
+            <label for="q10-d">หาร</label>
+        </div>
+    </div>
+</div>
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(2)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+    
+    <div id="quiz-3" class="quiz">
+        <h2>บททดสอบที่ 3</h2>
+        <form id="quiz-3-form">
+            <div>
+                <label>คำถามที่ 1:“母亲”是什么意思？(“Mǔqīn” de yìsi shì?)คำว่า “母亲” หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q1" value="1" id="q1-a">
+                        <label for="q1-a">ลูกชาย </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="2" id="q1-b">
+                        <label for="q1-b">แม่</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="3" id="q1-c">
+                        <label for="q1-c">พี่สาว</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="4" id="q1-d">
+                        <label for="q1-d"> พ่อ </label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 2 -->
+            <div>
+                <label>คำถามที่ 2: “外公”是什么意思？(“Wàigōng” de yìsi shì?) คำว่า “外公” หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q2" value="1" id="q2-a">
+                        <label for="q2-a">ตา</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="2" id="q2-b">
+                        <label for="q2-b">ปู่</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="3" id="q2-c">
+                        <label for="q2-c"> ลุง</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="4" id="q2-d">
+                        <label for="q2-d">ย่า</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 3 -->
+            <div>
+                <label>คำถามที่ 3:“哥哥”是什么意思？
+                    (“Gēgē” de yìsi shì?)
+                    คำว่า “哥哥” หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q3" value="1" id="q3-a">
+                        <label for="q3-a">น้องชาย</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="2" id="q3-b">
+                        <label for="q3-b">น้องสาว</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="3" id="q3-c">
+                        <label for="q3-c">พี่สาว</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="4" id="q3-d">
+                        <label for="q3-d">พี่ชาย</label>
+                    </div>
+                </div>
+            </div>
+     <!-- คำถามที่ 4 -->
+     <div>
+        <label>คำถามที่ 4:คำว่า “姐姐” หมายถึงอะไร?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q4" value="1" id="q4-a">
+                <label for="q4-a"> น้องสาว</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="2" id="q4-b">
+                <label for="q4-b">พี่สาว</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="3" id="q4-c">
+                <label for="q4-c">พี่ชาย</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="4" id="q4-d">
+                <label for="q4-d">ลูกสาว</label>
+            </div>
+        </div>
+    </div>
+ <!-- คำถามที่ 5 -->
+ <div>
+    <label>คำถามที่ 5:“弟弟”是什么意思？
+        (“Dìdì” de yìsi shì?)
+        คำว่า “弟弟” หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q5" value="1" id="q5-a">
+            <label for="q5-a">พี่ชาย</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="2" id="q5-b">
+            <label for="q5-b">พี่สาว</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="3" id="q5-c">
+            <label for="q5-c">น้องชาย</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="4" id="q5-d">
+            <label for="q5-d">น้องสาว</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 6 -->
+ <div>
+    <label>คำถามที่ 6:“姐姐”是什么意思？
+        (“Jiějiě” de yìsi shì?)
+        คำว่า “姐姐” หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q6" value="1" id="q6-a">
+            <label for="q6-a">น้องสาว</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="2" id="q6-b">
+            <label for="q6-b"> พี่สาว</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="3" id="q6-c">
+            <label for="q6-c">พี่ชาย</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="4" id="q6-d">
+            <label for="q6-d">น้องชาย</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 7 -->
+ <div>
+    <label>คำถามที่ 7:“奶奶”是什么意思？
+        (“Nǎinai” de yìsi shì?)
+        คำว่า “奶奶” หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q7" value="1" id="q7-a">
+            <label for="q7-a">ย่า</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="2" id="q7-b">
+            <label for="q7-b">ปู่</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="3" id="q7-c">
+            <label for="q7-c">ตา</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="4" id="q7-d">
+            <label for="q7-d">ยาย</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 8 -->
+ <div>
+    <label>คำถามที่ 8:“丈夫”是什么意思？
+        (“Zhàngfū” de yìsi shì?)
+        คำว่า “丈夫” หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q8" value="1" id="q8-a">
+            <label for="q8-a">ลูกสาว</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="2" id="q8-b">
+            <label for="q8-b">ภรรยา</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="3" id="q8-c">
+            <label for="q8-c">ลูกชาย</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="4" id="q8-d">
+            <label for="q8-d">สามี</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 9 -->
+ <div>
+    <label>คำถามที่ 9:“孙女”是什么意思？
+        (“Sūnnǚ” de yìsi shì?)
+        คำว่า “孙女” หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q9" value="1" id="q9-a">
+            <label for="q9-a">หลานชาย (ของปู่หรือตา)</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="2" id="q9-b">
+            <label for="q9-b">หลานสาว (ของปู่หรือตา)</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="3" id="q9-c">
+            <label for="q9-c">หลานชาย (ของลุงหรือป้า)</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="4" id="q9-d">
+            <label for="q9-d"> หลานสาว (ของลุงหรือป้า)</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 10 -->
+ <div>
+    <label>คำถามที่ 10: “外婆”是什么意思？(“Wàipó” de yìsi shì?) คำว่า “外婆” หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q10" value="1" id="q10-a">
+            <label for="q10-a"> ปู่</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="2" id="q10-b">
+            <label for="q10-b">ตา</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="3" id="q10-c">
+            <label for="q10-c">ย่า</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="4" id="q10-d">
+            <label for="q10-d">ยาย</label>
+        </div>
+    </div>
+</div>
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(3)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+
+    <div id="quiz-4" class="quiz">
+            <h2>บททดสอบที่ 4</h2>
+            <form id="quiz-4-form">
+                <div>
+                    <label>คำถามที่ 1:“米饭”是什么意思？(“Mǐfàn” de yìsi shì?)คำว่า “米饭” หมายถึงอะไร? </label>
+                    <div class="options">
+                        <div>
+                            <input type="radio" name="q1" value="1" id="q1-a">
+                            <label for="q1-a">ขนมปัง</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q1" value="2" id="q1-b">
+                            <label for="q1-b">ข้าวสวย</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q1" value="3" id="q1-c">
+                            <label for="q1-c">เส้นก๋วยเตี๋ยว</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q1" value="4" id="q1-d">
+                            <label for="q1-d"> ผลไม้ </label>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- คำถามที่ 2 -->
+                <div>
+                    <label>คำถามที่ 2: “面包”是什么意思？(“Miànbāo” de yìsi shì?) คำว่า “面包” หมายถึงอะไร?</label>
+                    <div class="options">
+                        <div>
+                            <input type="radio" name="q2" value="1" id="q2-a">
+                            <label for="q2-a">ขนมปัง</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q2" value="2" id="q2-b">
+                            <label for="q2-b">ซุป</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q2" value="3" id="q2-c">
+                            <label for="q2-c"> เค้ก</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q2" value="4" id="q2-d">
+                            <label for="q2-d"> หม้อไฟ</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- คำถามที่ 3 -->
+                <div>
+                    <label>คำถามที่ 3:“牛肉”是什么意思？ (“Niúròu” de yìsi shì?) คำว่า “牛肉” หมายถึงอะไร?</label>
+                    <div class="options">
+                        <div>
+                            <input type="radio" name="q3" value="1" id="q3-a">
+                            <label for="q3-a">เนื้อหมู</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q3" value="2" id="q3-b">
+                            <label for="q3-b">เนื้อไก่</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q3" value="3" id="q3-c">
+                            <label for="q3-c">เนื้อวัว</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q3" value="4" id="q3-d">
+                            <label for="q3-d">ปลา</label>
+                        </div>
+                    </div>
+                </div>
+         <!-- คำถามที่ 4 -->
+         <div>
+            <label>คำถามที่ 4:“鸡肉”是什么意思？(“Jīròu” de yìsi shì?) คำว่า “鸡肉” หมายถึงอะไร?</label>
+            <div class="options">
+                <div>
+                    <input type="radio" name="q4" value="1" id="q4-a">
+                    <label for="q4-a">เนื้อหมู</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="2" id="q4-b">
+                    <label for="q4-b"> เนื้อไก่</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="3" id="q4-c">
+                    <label for="q4-c">เนื้อวัว</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="4" id="q4-d">
+                    <label for="q4-d">ปลา</label>
+                </div>
+            </div>
+        </div>
+     <!-- คำถามที่ 5 -->
+     <div>
+        <label>คำถามที่ 5:“火锅”是什么意思？(“Huǒguō” de yìsi shì?) คำว่า “火锅” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q5" value="1" id="q5-a">
+                <label for="q5-a">หม้อไฟ</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" value="2" id="q5-b">
+                <label for="q5-b">แพนเค้ก</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" value="3" id="q5-c">
+                <label for="q5-c">ขนมปัง</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" value="4" id="q5-d">
+                <label for="q5-d">เกี๊ยว</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 6 -->
+     <div>
+        <label>คำถามที่ 6:“蛋糕”是什么意思？(“Dàngāo” de yìsi shì?)คำว่า “蛋糕” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q6" value="1" id="q6-a">
+                <label for="q6-a"> ข้าวสวย</label>
+            </div>
+            <div>
+                <input type="radio" name="q6" value="2" id="q6-b">
+                <label for="q6-b"> เค้ก</label>
+            </div>
+            <div>
+                <input type="radio" name="q6" value="3" id="q6-c">
+                <label for="q6-c"> ผลไม้</label>
+            </div>
+            <div>
+                <input type="radio" name="q6" value="4" id="q6-d">
+                <label for="q6-d"> ซุป</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 7 -->
+     <div>
+        <label>คำถามที่ 7: “沙拉”是什么意思？(“Shālā” de yìsi shì?)คำว่า “沙拉” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q7" value="1" id="q7-a">
+                <label for="q7-a">สลัด</label>
+            </div>
+            <div>
+                <input type="radio" name="q7" value="2" id="q7-b">
+                <label for="q7-b">ซุป</label>
+            </div>
+            <div>
+                <input type="radio" name="q7" value="3" id="q7-c">
+                <label for="q7-c">ไอศกรีม</label>
+            </div>
+            <div>
+                <input type="radio" name="q7" value="4" id="q7-d">
+                <label for="q7-d">ขนมปัง</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 8 -->
+     <div>
+        <label>คำถามที่ 8:“冰淇淋”是什么意思？(“Bīngqílín” de yìsi shì?) คำว่า “冰淇淋” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q8" value="1" id="q8-a">
+                <label for="q8-a">ไอศกรีม</label>
+            </div>
+            <div>
+                <input type="radio" name="q8" value="2" id="q8-b">
+                <label for="q8-b"> ข้าว</label>
+            </div>
+            <div>
+                <input type="radio" name="q8" value="3" id="q8-c">
+                <label for="q8-c">สลัด</label>
+            </div>
+            <div>
+                <input type="radio" name="q8" value="4" id="q8-d">
+                <label for="q8-d">แพนเค้ก</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 9 -->
+     <div>
+        <label>คำถามที่ 9:“‘火锅’用拼音怎么写？” คำว่า "火锅" เขียนพินอินว่าอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q9" value="1" id="q9-a">
+                <label for="q9-a">huǒguō</label>
+            </div>
+            <div>
+                <input type="radio" name="q9" value="2" id="q9-b">
+                <label for="q9-b">huǒjǔ</label>
+            </div>
+            <div>
+                <input type="radio" name="q9" value="3" id="q9-c">
+                <label for="q9-c">huòguó</label>
+            </div>
+            <div>
+                <input type="radio" name="q9" value="4" id="q9-d">
+                <label for="q9-d"> huǒguó</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 10 -->
+     <div>
+        <label>คำถามที่ 10:“‘茶’用拼音怎么写？” คำว่า "茶" เขียนพินอินว่าอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q10" value="1" id="q10-a">
+                <label for="q10-a"> chà</label>
+            </div>
+            <div>
+                <input type="radio" name="q10" value="2" id="q10-b">
+                <label for="q10-b">chá</label>
+            </div>
+            <div>
+                <input type="radio" name="q10" value="3" id="q10-c">
+                <label for="q10-c">chǎ</label>
+            </div>
+            <div>
+                <input type="radio" name="q10" value="4" id="q10-d">
+                <label for="q10-d">chā</label>
+            </div>
+        </div>
+    </div>
+                <!-- ปุ่มตรวจสอบคะแนน -->
+                <button type="button" onclick="submitQuiz(4)">ตรวจสอบคะแนน</button>
+            </form>
+        </div>
+
+    <div id="quiz-5" class="quiz">
+        <h2>บททดสอบที่ 5</h2>
+        <form id="quiz-5-form">
+             <div>
+                    <label>คำถามที่ 1:“猫”是什么意思？(“Māo” de yìsi shì?) คำว่า “猫” หมายถึงอะไร? </label>
+                    <div class="options">
+                        <div>
+                            <input type="radio" name="q1" value="1" id="q1-a">
+                            <label for="q1-a">หมู</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q1" value="2" id="q1-b">
+                            <label for="q1-b">แมว</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q1" value="3" id="q1-c">
+                            <label for="q1-c">ไก่</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q1" value="4" id="q1-d">
+                            <label for="q1-d">สุนัข</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- คำถามที่ 2 -->
+                <div>
+                    <label>คำถามที่ 2: “鱼”是什么意思？(“Yú” de yìsi shì?)คำว่า “鱼” หมายถึงอะไร?</label>
+                    <div class="options">
+                        <div>
+                            <input type="radio" name="q2" value="1" id="q2-a">
+                            <label for="q2-a">ปลา</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q2" value="2" id="q2-b">
+                            <label for="q2-b">นก</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q2" value="3" id="q2-c">
+                            <label for="q2-c">แมว</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q2" value="4" id="q2-d">
+                            <label for="q2-d">สุนัข</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- คำถามที่ 3 -->
+                <div>
+                    <label>คำถามที่ 3:“兔子”是什么意思？(“Tùzi” de yìsi shì?) คำว่า “兔子” หมายถึงอะไร?</label>
+                    <div class="options">
+                        <div>
+                            <input type="radio" name="q3" value="1" id="q3-a">
+                            <label for="q3-a">สุนัข</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q3" value="2" id="q3-b">
+                            <label for="q3-b"> แมว</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q3" value="3" id="q3-c">
+                            <label for="q3-c">กระต่าย</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q3" value="4" id="q3-d">
+                            <label for="q3-d">ปลา</label>
+                        </div>
+                    </div>
+                </div>
+         <!-- คำถามที่ 4 -->
+         <div>
+            <label>คำถามที่ 4:“马”是什么意思？(“Mǎ” de yìsi shì?)คำว่า “马” หมายถึงอะไร?</label>
+            <div class="options">
+                <div>
+                    <input type="radio" name="q4" value="1" id="q4-a">
+                    <label for="q4-a">หมู</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="2" id="q4-b">
+                    <label for="q4-b">วัว</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="3" id="q4-c">
+                    <label for="q4-c"> แกะ</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="4" id="q4-d">
+                    <label for="q4-d">ม้า</label>
+                </div>
+            </div>
+        </div>
+     <!-- คำถามที่ 5 -->
+     <div>
+        <label>คำถามที่ 5:“牛”是什么意思？(“Niú” de yìsi shì?) คำว่า “牛” หมายถึงอะไร?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q5" value="1" id="q5-a">
+                <label for="q5-a">วัว</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" value="2" id="q5-b">
+                <label for="q5-b">เสือ</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" value="3" id="q5-c">
+                <label for="q5-c">แมว</label>
+            </div>
+            <div>
+                <input type="radio" name="q5" value="4" id="q5-d">
+                <label for="q5-d">สุนัข</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 6 -->
+     <div>
+        <label>คำถามที่ 6:“猪”是什么意思？(“Zhū” de yìsi shì?) คำว่า “猪” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q6" value="1" id="q6-a">
+                <label for="q6-a"> กวาง</label>
+            </div>
+            <div>
+                <input type="radio" name="q6" value="2" id="q6-b">
+                <label for="q6-b"> หมู</label>
+            </div>
+            <div>
+                <input type="radio" name="q6" value="3" id="q6-c">
+                <label for="q6-c">ลิง</label>
+            </div>
+            <div>
+                <input type="radio" name="q6" value="4" id="q6-d">
+                <label for="q6-d">แมว</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 7 -->
+     <div>
+        <label>คำถามที่ 7: “鸡”是什么意思？(“Jī” de yìsi shì?) คำว่า “鸡” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q7" value="1" id="q7-a">
+                <label for="q7-a">เสือ</label>
+            </div>
+            <div>
+                <input type="radio" name="q7" value="2" id="q7-b">
+                <label for="q7-b">แกะ</label>
+            </div>
+            <div>
+                <input type="radio" name="q7" value="3" id="q7-c">
+                <label for="q7-c">ไก่</label>
+            </div>
+            <div>
+                <input type="radio" name="q7" value="4" id="q7-d">
+                <label for="q7-d">ปลา</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 8 -->
+     <div>
+        <label>คำถามที่ 8:“蛇”是什么意思？(“Shé” de yìsi shì?)คำว่า “蛇” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q8" value="1" id="q8-a">
+                <label for="q8-a">งู</label>
+            </div>
+            <div>
+                <input type="radio" name="q8" value="2" id="q8-b">
+                <label for="q8-b">สุนัข</label>
+            </div>
+            <div>
+                <input type="radio" name="q8" value="3" id="q8-c">
+                <label for="q8-c">ม้า</label>
+            </div>
+            <div>
+                <input type="radio" name="q8" value="4" id="q8-d">
+                <label for="q8-d">แมว</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 9 -->
+     <div>
+        <label>คำถามที่ 9:“猴子”是什么意思？(“Hóuzi” de yìsi shì?) คำว่า “猴子” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q9" value="1" id="q9-a">
+                <label for="q9-a">ลิง</label>
+            </div>
+            <div>
+                <input type="radio" name="q9" value="2" id="q9-b">
+                <label for="q9-b">หมู</label>
+            </div>
+            <div>
+                <input type="radio" name="q9" value="3" id="q9-c">
+                <label for="q9-c">ปลา</label>
+            </div>
+            <div>
+                <input type="radio" name="q9" value="4" id="q9-d">
+                <label for="q9-d">แมว</label>
+            </div>
+        </div>
+    </div>
+     <!-- คำถามที่ 10 -->
+     <div>
+        <label>คำถามที่ 10:“狮子”是什么意思 (“Shīzi” de yìsi shì?) คำว่า “狮子” หมายถึงอะไร? </label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q10" value="1" id="q10-a">
+                <label for="q10-a">สิงโต</label>
+            </div>
+            <div>
+                <input type="radio" name="q10" value="2" id="q10-b">
+                <label for="q10-b">เสือ</label>
+            </div>
+            <div>
+                <input type="radio" name="q10" value="3" id="q10-c">
+                <label for="q10-c">เสือ</label>
+            </div>
+            <div>
+                <input type="radio" name="q10" value="4" id="q10-d">
+                <label for="q10-d">ม้า</label>
+            </div>
+        </div>
+    </div>
+                <!-- ปุ่มตรวจสอบคะแนน -->
+                <button type="button" onclick="submitQuiz(5)">ตรวจสอบคะแนน</button>
+            </form>
+        </div>
+    <div id="quiz-6" class="quiz">
+        <h2>บททดสอบที่ 6</h2>
+        <form id="quiz-6-form">
+            <div>
+                <label>คำถามที่ 1:คำว่า "早上" (zǎoshàng) หมายถึงอะไร? </label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q1" value="1" id="q1-a">
+                        <label for="q1-a">ตอนเช้า</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="2" id="q1-b">
+                        <label for="q1-b">ตอนบ่าย</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="3" id="q1-c">
+                        <label for="q1-c">ตอนกลางคืน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="4" id="q1-d">
+                        <label for="q1-d">ตอนเย็น</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 2 -->
+            <div>
+                <label>คำถามที่ 2: "晚上" (wǎnshàng) หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q2" value="1" id="q2-a">
+                        <label for="q2-a">ตอนกลางวัน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="2" id="q2-b">
+                        <label for="q2-b">ตอนเช้า</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="3" id="q2-c">
+                        <label for="q2-c">ตอนเย็น/ตอนกลางคืน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="4" id="q2-d">
+                        <label for="q2-d"> ตอนบ่าย</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 3 -->
+            <div>
+                <label>คำถามที่ 3:"中午" (zhōngwǔ) ใช้เมื่อใด?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q3" value="1" id="q3-a">
+                        <label for="q3-a">ช่วงเช้า</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="2" id="q3-b">
+                        <label for="q3-b">ช่วงกลางคืน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="3" id="q3-c">
+                        <label for="q3-c">ช่วงเย็น</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="4" id="q3-d">
+                        <label for="q3-d">ช่วงเที่ยง</label>
+                    </div>
+                </div>
+            </div>
+     <!-- คำถามที่ 4 -->
+     <div>
+        <label>คำถามที่ 4:คำว่า "现在" (xiànzài) หมายถึงอะไร?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q4" value="1" id="q4-a">
+                <label for="q4-a"> พรุ่งนี้</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="2" id="q4-b">
+                <label for="q4-b">ตอนนี้</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="3" id="q4-c">
+                <label for="q4-c">เมื่อวาน</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="4" id="q4-d">
+                <label for="q4-d">เช้า</label>
+            </div>
+        </div>
+    </div>
+ <!-- คำถามที่ 5 -->
+ <div>
+    <label>คำถามที่ 5:คำว่า "明天" (míngtiān) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q5" value="1" id="q5-a">
+            <label for="q5-a"> พรุ่งนี้</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="2" id="q5-b">
+            <label for="q5-b">เมื่อวาน</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="3" id="q5-c">
+            <label for="q5-c">วันนี้</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="4" id="q5-d">
+            <label for="q5-d"> เช้า</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 6 -->
+ <div>
+    <label>คำถามที่ 6:"昨天" (zuótiān) หมายถึงวันอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q6" value="1" id="q6-a">
+            <label for="q6-a">วันนี้</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="2" id="q6-b">
+            <label for="q6-b"> พรุ่งนี้</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="3" id="q6-c">
+            <label for="q6-c">เมื่อวาน</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="4" id="q6-d">
+            <label for="q6-d">ตอนนี้</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 7 -->
+ <div>
+    <label>คำถามที่ 7: 小时" (xiǎoshí) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q7" value="1" id="q7-a">
+            <label for="q7-a">นาที</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="2" id="q7-b">
+            <label for="q7-b">วินาที</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="3" id="q7-c">
+            <label for="q7-c">ชั่วโมง</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="4" id="q7-d">
+            <label for="q7-d">วัน</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 8 -->
+ <div>
+    <label>คำถามที่ 8:"分钟" (fēnzhōng) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q8" value="1" id="q8-a">
+            <label for="q8-a">วัน</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="2" id="q8-b">
+            <label for="q8-b">นาที</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="3" id="q8-c">
+            <label for="q8-c">ชั่วโมง</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="4" id="q8-d">
+            <label for="q8-d">วินาที </label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 9 -->
+ <div>
+    <label>คำถามที่ 9:คำว่า "日历" (rìlì) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q9" value="1" id="q9-a">
+            <label for="q9-a">วินาที</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="2" id="q9-b">
+            <label for="q9-b">นาฬิกา</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="3" id="q9-c">
+            <label for="q9-c">สัปดาห์</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="4" id="q9-d">
+            <label for="q9-d">ปฏิทิน</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 10 -->
+ <div>
+    <label>คำถามที่ 10:คำว่า "早上好" (zǎoshàng hǎo) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q10" value="1" id="q10-a">
+            <label for="q10-a">สวัสดีตอนเช้า</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="2" id="q10-b">
+            <label for="q10-b">สวัสดีตอนเย็น</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="3" id="q10-c">
+            <label for="q10-c">สวัสดีตอนกลางคืน</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="4" id="q10-d">
+            <label for="q10-d">ลาก่อน</label>
+        </div>
+    </div>
+</div>
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(6)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+    <div id="quiz-7" class="quiz">
+        <h2>บททดสอบที่ 7</h2>
+        <form id="quiz-7-form">
+            <div>
+                <label>คำถามที่ 1:คำว่า "医生" (yīshēng) หมายถึงอะไร? </label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q1" value="1" id="q1-a">
+                        <label for="q1-a">คุณครู</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="2" id="q1-b">
+                        <label for="q1-b">หมอ</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="3" id="q1-c">
+                        <label for="q1-c">พนักงานธนาคาร</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="4" id="q1-d">
+                        <label for="q1-d">ช่างไฟ</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 2 -->
+            <div>
+                <label>คำถามที่ 2: "老师" (lǎoshī) หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q2" value="1" id="q2-a">
+                        <label for="q2-a">วิศวกร</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="2" id="q2-b">
+                        <label for="q2-b">นักแสดง</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="3" id="q2-c">
+                        <label for="q2-c">คุณครู</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="4" id="q2-d">
+                        <label for="q2-d">ช่างไม้</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 3 -->
+            <div>
+                <label>คำถามที่ 3:คำว่า "警察" (jǐngchá) หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q3" value="1" id="q3-a">
+                        <label for="q3-a">นักบัญชี</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="2" id="q3-b">
+                        <label for="q3-b">ตำรวจ</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="3" id="q3-c">
+                        <label for="q3-c">นักร้อง</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="4" id="q3-d">
+                        <label for="q3-d">หมอ</label>
+                    </div>
+                </div>
+            </div>
+     <!-- คำถามที่ 4 -->
+     <div>
+        <label>คำถามที่ 4:"护士" (hùshi) หมายถึงอะไร?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q4" value="1" id="q4-a">
+                <label for="q4-a"> พยาบาล</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="2" id="q4-b">
+                <label for="q4-b">ทนายความ </label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="3" id="q4-c">
+                <label for="q4-c">ช่างไฟ</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="4" id="q4-d">
+                <label for="q4-d">เกษตรกร</label>
+            </div>
+        </div>
+    </div>
+ <!-- คำถามที่ 5 -->
+ <div>
+    <label>คำถามที่ 5:"司机" (sījī) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q5" value="1" id="q5-a">
+            <label for="q5-a">นักขับรถ</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="2" id="q5-b">
+            <label for="q5-b">ชาวประมง</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="3" id="q5-c">
+            <label for="q5-c">นักธุรกิจ</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="4" id="q5-d">
+            <label for="q5-d"> นักข่าว</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 6 -->
+ <div>
+    <label>คำถามที่ 6:คำว่า "工程师" (gōngchéngshī) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q6" value="1" id="q6-a">
+            <label for="q6-a">ทนายความ</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="2" id="q6-b">
+            <label for="q6-b"> วิศวกร</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="3" id="q6-c">
+            <label for="q6-c">นักดนตรี</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="4" id="q6-d">
+            <label for="q6-d"> นักข่าว</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 7 -->
+ <div>
+    <label>คำถามที่ 7: "演员" (yǎnyuán) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q7" value="1" id="q7-a">
+            <label for="q7-a"> ครู</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="2" id="q7-b">
+            <label for="q7-b">นักการเมือง</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="3" id="q7-c">
+            <label for="q7-c">พนักงานโรงแรม</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="4" id="q7-d">
+            <label for="q7-d">นักแสดง</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 8 -->
+ <div>
+    <label>คำถามที่ 8:คำว่า "商人" (shāngrén) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q8" value="1" id="q8-a">
+            <label for="q8-a">นักธุรกิจ</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="2" id="q8-b">
+            <label for="q8-b">หมอ</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="3" id="q8-c">
+            <label for="q8-c">นักกีฬา</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="4" id="q8-d">
+            <label for="q8-d">ช่างตัดผม</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 9 -->
+ <div>
+    <label>คำถามที่ 9:"作家" (zuòjiā) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q9" value="1" id="q9-a">
+            <label for="q9-a">ช่างไม้</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="2" id="q9-b">
+            <label for="q9-b">ทนายความ</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="3" id="q9-c">
+            <label for="q9-c">นักเขียน</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="4" id="q9-d">
+            <label for="q9-d">นักบัญชี</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 10 -->
+ <div>
+    <label>คำถามที่ 10:คำว่า "农民" (nóngmín) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q10" value="1" id="q10-a">
+            <label for="q10-a"> เกษตรกร</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="2" id="q10-b">
+            <label for="q10-b"> ตำรวจ</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="3" id="q10-c">
+            <label for="q10-c">นักบัญชี</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="4" id="q10-d">
+            <label for="q10-d"> พนักงานขาย</label>
+        </div>
+    </div>
+</div>
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(7)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+    <div id="quiz-8" class="quiz">
+        <h2>บททดสอบที่ 8</h2>
+        <form id="quiz-8-form">
+            <div>
+                <label>คำถามที่ 1: คำว่า "机场" (jīchǎng) หมายถึงอะไร? </label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q1" value="1" id="q1-a">
+                        <label for="q1-a"> สถานีรถไฟ</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="2" id="q1-b">
+                        <label for="q1-b">สนามบิน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="3" id="q1-c">
+                        <label for="q1-c">สถานีรถเมล์</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="4" id="q1-d">
+                        <label for="q1-d">ท่าเรือ</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 2 -->
+            <div>
+                <label>คำถามที่ 2: คำว่า "火车站" (huǒchēzhàn) หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q2" value="1" id="q2-a">
+                        <label for="q2-a">สถานีรถไฟ</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="2" id="q2-b">
+                        <label for="q2-b">สนามบิน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="3" id="q2-c">
+                        <label for="q2-c">ป้ายรถเมล์</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="4" id="q2-d">
+                        <label for="q2-d">สถานีรถไฟใต้ดิน</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 3 -->
+            <div>
+                <label>คำถามที่ 3:"行李" (xíngli) หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q3" value="1" id="q3-a">
+                        <label for="q3-a">กระเป๋าเดินทาง</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="2" id="q3-b">
+                        <label for="q3-b"> ตั๋วเครื่องบิน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="3" id="q3-c">
+                        <label for="q3-c">พาสปอร์ต</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="4" id="q3-d">
+                        <label for="q3-d">รถแท็กซี่</label>
+                    </div>
+                </div>
+            </div>
+     <!-- คำถามที่ 4 -->
+     <div>
+        <label>คำถามที่ 4:"护照" (hùzhào) หมายถึงอะไร?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q4" value="1" id="q4-a">
+                <label for="q4-a">ตั๋ว</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="2" id="q4-b">
+                <label for="q4-b">กระเป๋า</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="3" id="q4-c">
+                <label for="q4-c"> หนังสือเดินทาง</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="4" id="q4-d">
+                <label for="q4-d">โรงแรม</label>
+            </div>
+        </div>
+    </div>
+ <!-- คำถามที่ 5 -->
+ <div>
+    <label>คำถามที่ 5:คำว่า "旅游" (lǚyóu) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q5" value="1" id="q5-a">
+            <label for="q5-a">โรงแรม</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="2" id="q5-b">
+            <label for="q5-b"> การท่องเที่ยว</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="3" id="q5-c">
+            <label for="q5-c">สนามบิน</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="4" id="q5-d">
+            <label for="q5-d">รถไฟ</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 6 -->
+ <div>
+    <label>คำถามที่ 6:คำว่า "司机" (sījī) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q6" value="1" id="q6-a">
+            <label for="q6-a">ชาวประมง</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="2" id="q6-b">
+            <label for="q6-b">นักท่องเที่ยว </label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="3" id="q6-c">
+            <label for="q6-c">นักบิน</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="4" id="q6-d">
+            <label for="q6-d">คนขับรถ</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 7 -->
+ <div>
+    <label>คำถามที่ 7: คำว่า "地图" (dìtú) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q7" value="1" id="q7-a">
+            <label for="q7-a"> แผนที่</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="2" id="q7-b">
+            <label for="q7-b">คู่มือ</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="3" id="q7-c">
+            <label for="q7-c">โรงแรม</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="4" id="q7-d">
+            <label for="q7-d">รถแท็กซี่</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 8 -->
+ <div>
+    <label>คำถามที่ 8:คำว่า "飞机" (fēijī) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q8" value="1" id="q8-a">
+            <label for="q8-a"> รถไฟ</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="2" id="q8-b">
+            <label for="q8-b">เครื่องบิน</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="3" id="q8-c">
+            <label for="q8-c">รถประจำทาง</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="4" id="q8-d">
+            <label for="q8-d">เรือ</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 9 -->
+ <div>
+    <label>คำถามที่ 9:"巴士" (bāshì) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q9" value="1" id="q9-a">
+            <label for="q9-a">รถแท็กซี่</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="2" id="q9-b">
+            <label for="q9-b">รถไฟ</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="3" id="q9-c">
+            <label for="q9-c">เรือ</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="4" id="q9-d">
+            <label for="q9-d">รถบัส</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 10 -->
+ <div>
+    <label>คำถามที่ 10:คำว่า "酒店" (jiǔdiàn) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q10" value="1" id="q10-a">
+            <label for="q10-a">โรงแรม</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="2" id="q10-b">
+            <label for="q10-b">สนามบิน</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="3" id="q10-c">
+            <label for="q10-c">ร้านอาหาร</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="4" id="q10-d">
+            <label for="q10-d">แผนที่</label>
+        </div>
+    </div>
+</div>
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(8)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+    <div id="quiz-9" class="quiz">
+        <h2>บททดสอบที่ 9</h2>
+        <form id="quiz-9-form">
+            <div>
+                <label>คำถามที่ 1:คำว่า "超市" (chāoshì) หมายถึงอะไร? </label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q1" value="1" id="q1-a">
+                        <label for="q1-a">ห้องลองเสื้อ</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="2" id="q1-b">
+                        <label for="q1-b"> ตลาด </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="3" id="q1-c">
+                        <label for="q1-c"> ซุปเปอร์มาร์เก็ต</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="4" id="q1-d">
+                        <label for="q1-d"> ศูนย์การค้า</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 2 -->
+            <div>
+                <label>คำถามที่ 2: "折扣" (zhékòu) หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q2" value="1" id="q2-a">
+                        <label for="q2-a">ส่วนลด</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="2" id="q2-b">
+                        <label for="q2-b">สินค้า</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="3" id="q2-c">
+                        <label for="q2-c">บัตรเครดิต</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="4" id="q2-d">
+                        <label for="q2-d">ราคา</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- คำถามที่ 3 -->
+            <div>
+                <label>คำถามที่ 3:คำว่า "付款" (fùkuǎn) หมายถึงอะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q3" value="1" id="q3-a">
+                        <label for="q3-a">ซื้อสินค้า</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="2" id="q3-b">
+                        <label for="q3-b">ชำระเงิน</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="3" id="q3-c">
+                        <label for="q3-c">เปลี่ยนสินค้า</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="4" id="q3-d">
+                        <label for="q3-d">คืนสินค้า</label>
+                    </div>
+                </div>
+            </div>
+     <!-- คำถามที่ 4 -->
+     <div>
+        <label>คำถามที่ 4:"购物车" (gòuwùchē) หมายถึงอะไร?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="q4" value="1" id="q4-a">
+                <label for="q4-a">รถเข็น</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="2" id="q4-b">
+                <label for="q4-b">ศูนย์การค้า</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="3" id="q4-c">
+                <label for="q4-c"> ใบเสร็จ</label>
+            </div>
+            <div>
+                <input type="radio" name="q4" value="4" id="q4-d">
+                <label for="q4-d">ห้องลองเสื้อ</label>
+            </div>
+        </div>
+    </div>
+ <!-- คำถามที่ 5 -->
+ <div>
+    <label>คำถามที่ 5:คำว่า "店员" (diànyuán) หมายถึงอะไร?</label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q5" value="1" id="q5-a">
+            <label for="q5-a"> พนักงานขาย</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="2" id="q5-b">
+            <label for="q5-b">ลูกค้า</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="3" id="q5-c">
+            <label for="q5-c">โปรโมชั่น</label>
+        </div>
+        <div>
+            <input type="radio" name="q5" value="4" id="q5-d">
+            <label for="q5-d">คุณภาพ</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 6 -->
+ <div>
+    <label>คำถามที่ 6:คำว่า "收据" (shōujù) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q6" value="1" id="q6-a">
+            <label for="q6-a">บัตรเครดิต</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="2" id="q6-b">
+            <label for="q6-b"> ใบเสร็จ</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="3" id="q6-c">
+            <label for="q6-c"> เงินสด</label>
+        </div>
+        <div>
+            <input type="radio" name="q6" value="4" id="q6-d">
+            <label for="q6-d">ส่วนลด</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 7 -->
+ <div>
+    <label>คำถามที่ 7: คำว่า "换货" (huànhuò) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q7" value="1" id="q7-a">
+            <label for="q7-a"> คืนสินค้า</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="2" id="q7-b">
+            <label for="q7-b"> เปลี่ยนสินค้า</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="3" id="q7-c">
+            <label for="q7-c">ชำระเงิน</label>
+        </div>
+        <div>
+            <input type="radio" name="q7" value="4" id="q7-d">
+            <label for="q7-d">คุณภาพ</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 8 -->
+ <div>
+    <label>คำถามที่ 8:"试衣间" (shìyījiān) ใช้ในบริบทใด? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q8" value="1" id="q8-a">
+            <label for="q8-a"> การคืนสินค้า</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="2" id="q8-b">
+            <label for="q8-b">การลดราคา</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="3" id="q8-c">
+            <label for="q8-c">การชำระเงิน</label>
+        </div>
+        <div>
+            <input type="radio" name="q8" value="4" id="q8-d">
+            <label for="q8-d">การลองเสื้อผ้า</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 9 -->
+ <div>
+    <label>คำถามที่ 9:คำว่า "质量" (zhìliàng) หมายถึงอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q9" value="1" id="q9-a">
+            <label for="q9-a">ราคา</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="2" id="q9-b">
+            <label for="q9-b"> คุณภาพ</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="3" id="q9-c">
+            <label for="q9-c">การบริการ</label>
+        </div>
+        <div>
+            <input type="radio" name="q9" value="4" id="q9-d">
+            <label for="q9-d">โปรโมชั่น</label>
+        </div>
+    </div>
+</div>
+ <!-- คำถามที่ 10 -->
+ <div>
+    <label>คำถามที่ 10:หากคุณต้องการชำระเงินด้วยบัตรเครดิต คุณจะพูดว่าอะไร? </label>
+    <div class="options">
+        <div>
+            <input type="radio" name="q10" value="1" id="q10-a">
+            <label for="q10-a">我想用现金付款。 (Wǒ xiǎng yòng xiànjīn fùkuǎn.)</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="2" id="q10-b">
+            <label for="q10-b">我需要换货。 (Wǒ xūyào huànhuò.)</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="3" id="q10-c">
+            <label for="q10-c">我想用信用卡付款。 (Wǒ xiǎng yòng xìnyòngkǎ fùkuǎn.)</label>
+        </div>
+        <div>
+            <input type="radio" name="q10" value="4" id="q10-d">
+            <label for="q10-d"> 请给我收据。 (Qǐng gěi wǒ shōujù.)</label>
+        </div>
+    </div>
+</div>
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(9)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+     <div id="quiz-10" class="quiz">
+        <h2>บททดสอบที่ 10</h2>
+        <form id="quiz-10-form">
+            <div>
+                <label>คำถามที่ 1: "โรงเรียน" ในภาษาจีนคืออะไร? </label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q1" value="1" id="q1-a">
+                        <label for="q1-a">学校 (xuéxiào)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="2" id="q1-b">
+                        <label for="q1-b">图书馆 (túshūguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="3" id="q1-c">
+                        <label for="q1-c">医院 (yīyuàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" value="4" id="q1-d">
+                        <label for="q1-d">公园 (gōngyuán)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 2: "สวนสาธารณะ" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q2" value="1" id="q2-a">
+                        <label for="q2-a">银行 (yínháng)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="2" id="q2-b">
+                        <label for="q2-b">公园 (gōngyuán)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="3" id="q2-c">
+                        <label for="q2-c">宾馆 (bīnguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" value="4" id="q2-d">
+                        <label for="q2-d">市场 (shìchǎng)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 3: "ห้องสมุด" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q3" value="1" id="q3-a">
+                        <label for="q3-a">图书馆 (túshūguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="2" id="q3-b">
+                        <label for="q3-b">火车站 (huǒchēzhàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="3" id="q3-c">
+                        <label for="q3-c">博物馆 (bówùguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" value="4" id="q3-d">
+                        <label for="q3-d">电影院 (diànyǐngyuàn)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 4: "สถานีรถไฟ" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q4" value="1" id="q4-a">
+                        <label for="q4-a">机场 (jīchǎng)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4" value="2" id="q4-b">
+                        <label for="q4-b">火车站 (huǒchēzhàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4" value="3" id="q4-c">
+                        <label for="q4-c">地铁站 (dìtiězhàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4" value="4" id="q4-d">
+                        <label for="q4-d">宾馆 (bīnguǎn)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 5: "โรงพยาบาล" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q5" value="1" id="q5-a">
+                        <label for="q5-a">医院 (yīyuàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5" value="2" id="q5-b">
+                        <label for="q5-b">银行 (yínháng)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5" value="3" id="q5-c">
+                        <label for="q5-c">警察局 (jǐngchájú)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5" value="4" id="q5-d">
+                        <label for="q5-d">商场 (shāngchǎng)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 6: "โรงภาพยนตร์" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q6" value="1" id="q6-a">
+                        <label for="q6-a">电影院 (diànyǐngyuàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q6" value="2" id="q6-b">
+                        <label for="q6-b">图书馆 (túshūguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q6" value="3" id="q6-c">
+                        <label for="q6-c">动物园 (dòngwùyuán)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q6" value="4" id="q6-d">
+                        <label for="q6-d">超市 (chāoshì)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 7: "ธนาคาร" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q7" value="1" id="q7-a">
+                        <label for="q7-a">银行 (yínháng)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q7" value="2" id="q7-b">
+                        <label for="q7-b">博物馆 (bówùguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q7" value="3" id="q7-c">
+                        <label for="q7-c">饭店 (fàndiàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q7" value="4" id="q7-d">
+                        <label for="q7-d">邮局 (yóujú)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 8: "สนามบิน" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q8" value="1" id="q8-a">
+                        <label for="q8-a">机场 (jīchǎng)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q8" value="2" id="q8-b">
+                        <label for="q8-b">地铁站 (dìtiězhàn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q8" value="3" id="q8-c">
+                        <label for="q8-c">学校 (xuéxiào)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q8" value="4" id="q8-d">
+                        <label for="q8-d">图书馆 (túshūguǎn)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 9: หากคุณต้องการส่งจดหมาย คุณจะไปที่ไหน?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q9" value="1" id="q9-a">
+                        <label for="q9-a">邮局 (yóujú)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q9" value="2" id="q9-b">
+                        <label for="q9-b">图书馆 (túshūguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q9" value="3" id="q9-c">
+                        <label for="q9-c">博物馆 (bówùguǎn)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q9" value="4" id="q9-d">
+                        <label for="q9-d">饭店 (fàndiàn)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>คำถามที่ 10: "ภัตตาคาร" ในภาษาจีนคืออะไร?</label>
+                <div class="options">
+                    <div>
+                        <input type="radio" name="q10" value="1" id="q10-a">
+                        <label for="q10-a">餐厅 (cāntīng)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q10" value="2" id="q10-b">
+                        <label for="q10-b">动物园 (dòngwùyuán)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q10" value="3" id="q10-c">
+                        <label for="q10-c">寺庙 (sìmiào)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q10" value="4" id="q10-d">
+                        <label for="q10-d">医院 (yīyuàn)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ปุ่มตรวจสอบคะแนน -->
+            <button type="button" onclick="submitQuiz(10)">ตรวจสอบคะแนน</button>
+        </form>
+    </div>
+
+</div>
+
+<div id="lesson-link" style="display: none; text-align: right; margin-top: 20px;">
+    <a href="#" id="lesson-link-button" class="button">ไปยังบทเรียน</a>
+</div>
+
+<script>
+    function loadQuiz(quizNumber) {
+        const quizzes = document.querySelectorAll('.quiz');
+        const buttons = document.querySelectorAll('.menu button');
+        
+        // ซ่อนทุกบททดสอบก่อน
+        quizzes.forEach(quiz => {
+            quiz.classList.remove('active');
+        });
+
+        // แสดงบททดสอบที่เลือก
+        const selectedQuiz = document.getElementById(`quiz-${quizNumber}`);
+        if (selectedQuiz) {
+            selectedQuiz.classList.add('active');
+        }
+
+        // ซ่อนปุ่มทั้งหมด
+        buttons.forEach(button => {
+            button.style.display = 'none';
+        });
+
+        // ซ่อนปุ่มบทเรียน
+        document.getElementById('lesson-link').style.display = 'none';
+    }
+
+    function submitQuiz(quizNumber) {
+        let score = 0;
+        const quizForm = document.getElementById(`quiz-${quizNumber}-form`);
+        const answers = quizForm.querySelectorAll('input[type="radio"]:checked');
+
+        // ตรวจสอบคำตอบแต่ละข้อ
+        const correctAnswers = {
+            1: {
+                q1: '3',
+                q2: '2',
+                q3: '2',
+                q4: '4',
+                q5: '1',
+                q6: '2',
+                q7: '1',
+                q8: '1',
+                q9: '3',
+                q10: '1'
+            },
+            2: {
+                q1: '2',
+                q2: '4',
+                q3: '4',
+                q4: '1',
+                q5: '1',
+                q6: '3',
+                q7: '1',
+                q8: '2',
+                q9: '3',
+                q10: '1'
+            },
+            3: {
+                q1: '2',
+                q2: '1',
+                q3: '4',
+                q4: '2',
+                q5: '3',
+                q6: '2',
+                q7: '1',
+                q8: '4',
+                q9: '2',
+                q10: '4'
+            },
+            4: {
+                q1: '2',
+                q2: '1',
+                q3: '3',
+                q4: '2',
+                q5: '1',
+                q6: '2',
+                q7: '1',
+                q8: '1',
+                q9: '1',
+                q10: '2'
+            },
+            5: {
+                q1: '2',
+                q2: '1',
+                q3: '3',
+                q4: '4',
+                q5: '1',
+                q6: '2',
+                q7: '3',
+                q8: '1',
+                q9: '1',
+                q10: '1'
+            },
+            6: {
+                q1: '1',
+                q2: '3',
+                q3: '4',
+                q4: '2',
+                q5: '1',
+                q6: '3',
+                q7: '3',
+                q8: '2',
+                q9: '4',
+                q10: '1'
+            },
+            7: {
+                q1: '2',
+                q2: '3',
+                q3: '2',
+                q4: '1',
+                q5: '1',
+                q6: '2',
+                q7: '4',
+                q8: '1',
+                q9: '3',
+                q10: '1'
+            },
+            8: {
+                q1: '2',
+                q2: '1',
+                q3: '1',
+                q4: '3',
+                q5: '2',
+                q6: '4',
+                q7: '1',
+                q8: '2',
+                q9: '4',
+                q10: '1'
+            },
+            9: {
+                q1: '3',
+                q2: '1',
+                q3: '2',
+                q4: '1',
+                q5: '1',
+                q6: '2',
+                q7: '2',
+                q8: '4',
+                q9: '2',
+                q10: '3'
+            },
+            10: {
+                q1: '1',
+                q2: '2',
+                q3: '1',
+                q4: '2',
+                q5: '1',
+                q6: '1',
+                q7: '1',
+                q8: '1',
+                q9: '1',
+                q10: '1'
+            },
+           
+        };
+
+        answers.forEach(answer => {
+            const questionId = answer.name;
+            const selectedAnswer = answer.value;
+            if (selectedAnswer === correctAnswers[quizNumber][questionId]) {
+                score++;
+            }
+        });
+
+        alert(`คุณได้คะแนน: ${score}/10`);
+
+        // แสดงปุ่มไปยังบทเรียน
+        const lessonLink = document.getElementById('lesson-link');
+        const lessonLinkButton = document.getElementById('lesson-link-button');
+
+        lessonLinkButton.href = `cat2.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat3.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat4.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat5.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat6.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat7.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat8.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat9.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat10.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+        lessonLinkButton.href = `cat1.html`; // กำหนดลิงก์ไปยังบทเรียนที่เหมาะสม
+        lessonLink.style.display = 'block';
+    }
+</script>
+
+<style>
+    .quiz {
+        display: none; /* ซ่อนคำถามทั้งหมดโดยเริ่มต้น */
+        text-align: left; /* จัดข้อความทั้งหมดชิดซ้าย */
+    }
+
+    .quiz.active {
+        display: block; /* แสดงคำถามที่เลือก */
+    }
+
+    .quiz form div {
+        margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างคำถาม */
+    }
+
+    .quiz label {
+        display: block; /* แสดงคำถามในบรรทัดของตัวเอง */
+        margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างคำถามและตัวเลือก */
+        font-size: 20px;
+    }
+
+    .quiz .options {
+        display: flex;
+        flex-direction: column; /* จัดตัวเลือกให้อยู่ในแนวตั้ง */
+        gap: 5px; /* ระยะห่างระหว่างตัวเลือก */
+    }
+
+    .quiz .options div {
+        display: flex;
+        align-items: center;
+    }
+
+    .quiz input[type="radio"] {
+        margin-right: 10px; /* ระยะห่างระหว่างปุ่มตัวเลือกและข้อความ */
+    }
+
+    #lesson-link .button {
+        display: inline-block;
+        padding:  16px 28px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px; /* ขนาดตัวอักษร */
+        font-weight: bold; /* ตัวหนา */
+        border-radius: 8px; /* มุมมน */
+        cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปมือ */
+        transition: background-color 0.3s, transform 0.2s; /* เอฟเฟกต์เวลาเปลี่ยนสี */
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+        
+    }
+
+    #lesson-link .button:hover {
+        background-color: #b33600;
+    }
+    button {
+            background-color: #4CAF50; /* สีพื้นหลัง */
+            border: none; /* ไม่มีเส้นขอบ */
+            color: white; /* สีตัวหนังสือ */
+            padding: 16px 28px; /* ความกว้างและความสูงของปุ่ม */
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+            display: inline-block;
+            font-size: 16px; /* ขนาดตัวอักษร */
+            font-weight: bold; /* ตัวหนา */
+            border-radius: 8px; /* มุมมน */
+            cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปมือ */
+            transition: background-color 0.3s, transform 0.2s; /* เอฟเฟกต์เวลาเปลี่ยนสี */
+        }
+
+        /* เมื่อเมาส์วางบนปุ่ม */
+        button:hover {
+            background-color: #45a049; /* สีพื้นหลังเมื่อชี้ */
+            transform: scale(1.05); /* ขยายเล็กน้อย */
+        }
+
+
+
+</style>
+
+
+<script src="burger.js"></script>
+
+</body>
+</html>
