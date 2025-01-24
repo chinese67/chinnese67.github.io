@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สื่อการเรียนรู้คำศัพท์ภาษาจีนใช้ในชีวิตประจำวัน</title>
+    <link rel="stylesheet" href="smenu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+
+    <style>
+        /* สไตล์ปุ่ม */
+        button {
+            background-color: #bd141a; /* สีพื้นหลัง */
+            border: none; /* ไม่มีเส้นขอบ */
+            color: white; /* สีตัวหนังสือ */
+            padding: 16px 28px; /* ความกว้างและความสูงของปุ่ม */
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+            display: inline-block;
+            font-size: 16px; /* ขนาดตัวอักษร */
+            font-weight: bold; /* ตัวหนา */
+            border-radius: 8px; /* มุมมน */
+            cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปมือ */
+            transition: background-color 0.3s, transform 0.2s; /* เอฟเฟกต์เวลาเปลี่ยนสี */
+        }
+
+        button:hover {
+            background-color: #45a049; /* สีพื้นหลังเมื่อชี้ */
+            transform: scale(1.05); /* ขยายเล็กน้อยเมื่อชี้ */
+        }
+
+        /* จัดปุ่มให้อยู่ฝั่งซ้าย */
+        .button-container {
+            text-align: center; /* จัดข้อความและปุ่มไปทางซ้าย */
+            padding-top: 20px; /* เพิ่มระยะห่างจากขอบซ้าย */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>คำศัพท์สถานที่ </h1>
+    <!-- ปุ่ม Hamburger Menu -->
+    <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+ 
+<!-- เมนูเลือกย้อนกลับ -->
+<div class="lesson-bar" id="lesson-bar">
+    <a href="index.html"><button class="nav-button" data-lesson="1">หน้าหลัก</button></a>  
+    <a href="pretest.html"><button class="nav-button" data-lesson="3">แบบทดสอบก่อนเรียน</button></a>
+    <a href="cate.html"><button class="nav-button" data-lesson="4">หมวดหมู่คำศัพท์</button></a>
+    <a href="quiz.html"><button class="nav-button" data-lesson="5">แบบทดสอบหลังเรียน</button></a>
+    <a href="about.html"><button class="nav-button" data-lesson="6">ผู้จัดทำ</button></a>
+    <a href="point.html"><button class="nav-button" data-lesson="2">คะแนนของคุณ</button></a>
+    <a href="login.html"><button class="nav-button" data-lesson="7">ลงชื่อเข้าใช้</button></a>
+    <a href="signup.html"><button class="nav-button" data-lesson="7">สมัครเข้าใช้เว็บไซต์</button></a>
+</div>
+
+<!--เนื้อหา-->
+<img src="images/2.png" alt="รูปตัวอย่าง" width="400" class="center-image">
+<h1>1.学校 (xuéxiào) </h1>
+<h2>แปลว่า โรงเรียน </h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>我们每天都去学校上课。
+    (Wǒmen měitiān dōu qù xuéxiào shàngkè.)
+<br>พวกเราไปเรียนที่โรงเรียนทุกวัน</h3>
+
+<h1>2. 医院 (yīyuàn)  </h1>
+<h2>แปลว่า  โรงพยาบาล</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>她生病了，所以去了医院。
+    (Tā shēngbìng le, suǒyǐ qùle yīyuàn.)
+<br>เธอป่วยจึงไปโรงพยาบาล</h3>
+
+<h1>3. 图书馆 (túshūguǎn) </h1>
+<h2>แปลว่า   ห้องสมุด</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>> 
+<h3>图书馆里有很多书。
+    (Túshūguǎn lǐ yǒu hěn duō shū.)  
+    <br>ในห้องสมุดมีหนังสือเยอะมาก</h3>
+   
+
+<h1>4.商场 (shāngchǎng)</h1>
+<h2>แปลว่า  ห้างสรรพสินค้า</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>周末我们常去公园散步。
+    (Zhōumò wǒmen cháng qù gōngyuán sànbù.)
+    <br>สุดสัปดาห์พวกเรามักไปเดินเล่นในสวนสาธารณะ</h3>
+
+<h1>5. 公园 (gōngyuán)  </h1>
+<h2>แปลว่า สวนสาธารณะ</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>商场的东西比超市贵一点。
+    (Shāngchǎng de dōngxī bǐ chāoshì guì yīdiǎn.)
+    <br>ของในห้างสรรพสินค้าจะแพงกว่าซุปเปอร์มาร์เก็ตเล็กน้อย </h3>
+
+<h1>6. 邮局 (yóujú) </h1>
+<h2>แปลว่า  ไปรษณีย์</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>我需要去邮局寄一封信。
+    (Wǒ xūyào qù yóujú jì yī fēng xìn.)
+    <br>ฉันต้องไปที่ไปรษณีย์เพื่อส่งจดหมาย </h3>
+    
+<h1>7. 机场 (jīchǎng) </h1>
+<h2>แปลว่า  สนามบิน</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>机场里有很多航班信息。
+    (Jīchǎng lǐ yǒu hěn duō hángbān xìnxī.) 
+    <br>ในสนามบินมีข้อมูลเที่ยวบินมากมาย</h3>
+
+<h1>8.火车站 (huǒchēzhàn)</h1>
+<h2>แปลว่า   สถานีรถไฟ</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>我们在火车站等了一小时。
+    (Wǒmen zài huǒchēzhàn děngle yī xiǎoshí.)
+<br>พวกเรารอที่สถานีรถไฟเป็นเวลา 1 ชั่วโมง</h3>
+
+<h1>9. 地铁站 (dìtiězhàn)</h1>
+<h2>แปลว่า   สถานีรถไฟใต้ดิน</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>地铁站离这里很近。
+    (Dìtiězhàn lí zhèlǐ hěn jìn.)
+    <br>สถานีรถไฟใต้ดินอยู่ใกล้ที่นี่</h3>
+
+
+<h1>10. 饭店 (fàndiàn)</h1>
+<h2>แปลว่า  โรงแรม / ร้านอาหาร</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>饭店的服务非常好。
+    (Fàndiàn de fúwù fēicháng hǎo.)
+    <br>การบริการของโรงแรมดีมาก</h3>
+
+<h1>11. 银行 (yínháng)</h1>
+<h2>แปลว่า ธนาคาร</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>他今天去银行取钱。
+    (Tā jīntiān qù yínháng qǔ qián.)
+<br>วันนี้เขาไปธนาคารเพื่อถอนเงิน</h3>
+
+<h1>12. 警察局 (jǐngchájú) </h1>
+<h2>แปลว่า สถานีตำรวจ</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>警察局就在超市旁边。
+    (Jǐngchájú jiù zài chāoshì pángbiān.)
+    <br> สถานีตำรวจอยู่ถัดจากซุปเปอร์มาร์เก็ต</h3>
+    
+
+<h1>13. 电影院 (diànyǐngyuàn)</h1>
+<h2>แปลว่า โรงภาพยนตร์</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>晚上我们一起去电影院看电影。
+    (Wǎnshàng wǒmen yīqǐ qù diànyǐngyuàn kàn diànyǐng.)    
+    <br>คืนนี้พวกเราไปดูหนังที่โรงภาพยนตร์ด้วยกัน</h3>
+
+<h1>14. 超市 (chāoshì) </h1>
+<h2>แปลว่า ซุปเปอร์มาร์เก็ต</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>超市里可以买到各种食品。
+    (Chāoshì lǐ kěyǐ mǎi dào gèzhǒng shípǐn.)
+<br>ในซุปเปอร์มาร์เก็ตสามารถซื้ออาหารได้หลากหลาย</h3>
+
+<h1>15.餐厅 (cāntīng)</h1>
+<h2>แปลว่า ภัตตาคาร</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>这家餐厅的菜非常好吃。
+    (Zhè jiā cāntīng de cài fēicháng hǎochī.)
+    <br>อาหารของภัตตาคารแห่งนี้อร่อยมาก</h3>
+   
+
+<h1>16. 动物园 (dòngwùyuán) </h1>
+<h2>แปลว่า สวนสัตว์</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>动物园里有很多可爱的动物。
+    (Dòngwùyuán lǐ yǒu hěn duō kě'ài de dòngwù.)
+<br>ในสวนสัตว์มีสัตว์น่ารักมากมาย</h3>
+
+<h1>17. 博物馆 (bówùguǎn)  </h1>
+<h2>แปลว่า พิพิธภัณฑ์</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>博物馆里展示了很多历史文物。
+    (Bówùguǎn lǐ zhǎnshì le hěn duō lìshǐ wénwù.)
+    <br>พิพิธภัณฑ์จัดแสดงวัตถุโบราณทางประวัติศาสตร์มากมาย</h3>
+
+<h1>18. 游泳池 (yóuyǒngchí)</h1>
+<h2>แปลว่า สระว่ายน้ำ</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6> 
+<h3>夏天我们经常去游泳池游泳。
+    (Xiàtiān wǒmen jīngcháng qù yóuyǒngchí yóuyǒng.)
+<br>ในฤดูร้อนพวกเรามักไปว่ายน้ำที่สระว่ายน้ำ</h3>
+
+
+<h1>19.体育馆 (tǐyùguǎn)</h1>
+<h2>แปลว่า  โรงยิม</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>体育馆是个锻炼身体的好地方。
+    (Tǐyùguǎn shì gè duànliàn shēntǐ de hǎo dìfāng.)
+<br>โรงยิมเป็นสถานที่ที่ดีในการออกกำลังกาย</h3>
+
+<h1>20.寺庙 (sìmiào) </h1>
+<h2>แปลว่า    วัด</h2>
+<h6>ตัวอย่างการใช้คำศัพท์</h6>  
+<h3>寺庙里有很多香客。
+    (Sìmiào lǐ yǒu hěn duō xiāngkè.)
+<br>ในวัดมีผู้ที่มากราบไหว้จำนวนมาก</h3>
+
+<div class="button-container">
+    <a href="quiz.html">
+        <button>แบบทดสอบหลังเรียน</button>
+    </a>
+</div>
+
+
+<script src="burger.js"></script>
+</body>
+</html>

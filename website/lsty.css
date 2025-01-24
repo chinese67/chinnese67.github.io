@@ -1,0 +1,33 @@
+
+body {
+    font-family: 'Mali', cursive;
+    background: linear-gradient(to top, #f1f129, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+main {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0b24e0;
+}
+footer {
+    text-align: center;
+    background-color: #0b24e0;
+    color: white;
+    padding: 10px 0;
+}
+.btn-primary {
+    background-color: #0b24e0;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #fd1d1d;
+}
